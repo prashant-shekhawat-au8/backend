@@ -14,7 +14,7 @@ var location=[
 
 //defaut server
 app.get('/',(req,res)=>{
-    res.status(200).send("my home route 1")
+    res.status(200).send("my home route ")
 })
 
 
