@@ -1,0 +1,17 @@
+{
+  "name": "third",
+  "version": "1.0.0",
+  "description": "",
+  "main": "expressapi.js",
+  "scripts": {
+    "start": "node expressapi.js",
+    "dev": "nodemon expressapi.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
