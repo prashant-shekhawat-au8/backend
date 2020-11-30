@@ -9,6 +9,19 @@ const port=process.env.PORT || 9801;  //look server for port no if not found use
 const hotelRouter=require('./scr/Route/hotelRoute');
 const locationRouter=require('./scr/Route/locationRoute');
 
+// var menu=[
+//     {link:"/",name:"Home"},
+//     {link:"/hotel",name:"Hotels"},
+//     {link:"/location",name:"city"}
+// ]
+
+//below code writeen in html in order to run for loop
+// <% for (i=0;i<menuitem.length;i++){ %>
+//     <li>
+//         <a href="<%menuitem.link%>"><%menuitems[i].name%></a>
+//     </li>
+
+
 //three things to be done in order to run ejs
 //1 where are static files
 app.use(express.static(__dirname+'/public'));
@@ -27,7 +40,7 @@ var location=[
  //defaut server
 app.get('/',(req,res)=>{
    // res.status(200).send("my home route ")
-   res.render('index')
+   res.render('index',{tittle:"my home page"})
 })
 
 
